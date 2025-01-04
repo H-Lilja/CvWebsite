@@ -2,5 +2,10 @@
     "HomePage": {
       "title": "Hei maailma",
       "about": "Go to the about page"
+    },
+
+    "ProjectsPage":{
+      "home": "Takaisin kotisivulle",
+      "project1": "test1"
     }
   }

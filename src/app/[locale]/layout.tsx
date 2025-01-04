@@ -3,7 +3,7 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/src/i18n/routing';
 import { Header } from '@/components/header';
-
+import '../[locale]/globals.css';
 export default async function LocaleLayout({
   children,
   params,
@@ -31,7 +31,7 @@ export default async function LocaleLayout({
       <body>
         {/* Include the Header component */}
         <Header />
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         {/* Provide internationalization context and render children */}
         <NextIntlClientProvider messages={messages}>
           {children}

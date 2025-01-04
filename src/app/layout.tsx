@@ -1,7 +1,7 @@
 "use client"
 // app/layout.tsx
 import { ReactNode, useEffect, useState } from 'react';
-
+import './[locale]/globals.css';
 export default function RootLayout({ children }: { children: ReactNode }) {
   const [isMounted, setIsMounted] = useState(false);
 
@@ -19,10 +19,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Your App Title</title>
+        <title>Cv for Heidi Lilja</title>
       </head>
       <body>
-        {children}
+        <nav>{children}</nav>
+        
       </body>
     </html>
   );
