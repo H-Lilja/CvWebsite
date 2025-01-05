@@ -3,7 +3,7 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/src/i18n/routing';
 import { Header } from '@/components/header';
-import '../[locale]/globals.css';
+
 export default async function LocaleLayout({
   children,
   params,
@@ -11,7 +11,7 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  const { locale } = await params;
+  const { locale } = params;
 
   // Ensure that the incoming locale is valid
   if (!routing.locales.includes(locale as any)) {
@@ -22,21 +22,11 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
-      <head>
-        {/* Include necessary meta tags, title, etc. */}
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Your App Title</title>
-      </head>
-      <body>
-        {/* Include the Header component */}
-        <Header />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        {/* Provide internationalization context and render children */}
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider messages={messages}>
+      {/* Include the Header component */}
+      <Header />
+      {/* Render the localized children */}
+      {children}
+    </NextIntlClientProvider>
   );
 }

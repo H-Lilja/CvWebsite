@@ -9,15 +9,6 @@
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffb7db;  /* Pink background */
-  font-family: Arial, sans-serif;
-}
-
 h1, p {
   color: white; /* White text color for contrast */
   text-align: center;
@@ -25,4 +16,37 @@ h1, p {
 
 body {
   font-size: 18px;  /* You can adjust font size here */
+}
+
+html, body {
+  height: 100%;  /* Ensure full height for the page */
+  background: linear-gradient(to bottom, white, #f8bbd0);  /* Gradient from white to light pink */
+  margin: 0;  /* Remove any default margin */
+}
+
+
+.yuji-syuku-regular {
+  font-size: 2rem;
+  font-family: "Yuji Syuku", serif;
+  font-weight: 500;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.splash-regular {
+  font-family: "Splash", serif;
+  font-size: 2rem;
+  font-weight: 900;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.source-serif-4 {
+  font-family: "Source Serif 4", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
 }

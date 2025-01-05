@@ -1,27 +1,23 @@
 'use client'; // Ensure this component is treated as a client component
 import '../[locale]/globals.css';
-import React from 'react';
 import { useTranslations } from 'next-intl';
-import { useLocale } from 'next-intl'; // To get the current locale
 import { Link } from '@/src/i18n/routing'; // Custom Link, assuming it's handling routing logic
+import About from '@/components/about';
+import React from 'react';
+import Timeline from '@/components/timeline';
 
 export default function HomePage() {
   const t = useTranslations('HomePage');
-  const locale = useLocale(); // Get the current locale directly from next-intl
+  // const locale = useLocale(); // Get the current locale directly from next-intl
 
   return (
-    <div className="text-3xl font-bold underline">
-        {/* <img
-            className="w-32 h-32 md:w-48 md:h-48 object-cover rounded-full pointer-events-none"
-            src="./images/my_picture.jpg"
-            width={500}
-            height={500}
-            alt="Heidi Lilja"
-          /> */}
-          
-      <h1>{t('title')}</h1>
-      {/* Dynamically add locale to the URL */}
-      <Link href={`/projectTab`}>{t('about')}</Link>
-    </div>
+    <main className="flex flex-col items-center justify-between px-4 md:px-24 pt-12 min-h-screen">
+        <div className="w-full max-w-6xl mx-auto">
+        <Link href={`/projectTab`}>{t('toProjects')}</Link>
+          <About />
+          <Timeline/>
+
+        </div>
+      </main>
   );
 }

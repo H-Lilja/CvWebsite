@@ -1,11 +1,26 @@
 {
-    "HomePage": {
-      "title": "Hei maailma",
-      "about": "Go to the about page"
-    },
-
-    "ProjectsPage":{
-      "home": "Takaisin kotisivulle",
-      "project1": "test1"
-    }
+  "HomePage": {
+    "toProjects": "Siirry projektisivulle",
+    "title": "Tervetuloa portfoliolleni!",
+    "about": "Olen täysipäiväinen web-kehittäjä, jolla on AP-tutkinto tietojenkäsittelytieteessä ja intohimo koodaukseen! Minulla on kokemusta monilta ohjelmoinnin alueilta, kuten Java, Python, C#, ja web-kehitys Reactilla ja JavaScriptillä. Etsin aina uusia mahdollisuuksia oppia uusia teknologioita ja parantaa taitojani. Etsin parhaillaan uusia projekteja, joihin voin osallistua, ota yhteyttä jos sinulla on kysyttävää!"
+  },
+  "ProjectsPage": {
+    "home": "Takaisin etusivulle",
+    "project1": "projekti1"
+  },
+  
+  "Timeline": {
+    "events": [
+      {
+        "date": "2025-01-01",
+        "title": "Tapahtuma 1",
+        "description": "Tapahtuman 1 kuvaus"
+      },
+      {
+        "date": "2025-02-01",
+        "title": "Tapahtuma 2",
+        "description": "Tapahtuman 2 kuvaus"
+      }
+    ]
   }
+}
