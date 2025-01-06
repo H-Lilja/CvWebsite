@@ -10,17 +10,15 @@
   },
   
   "Timeline": {
-    "events": [
-      {
+    "event1": {
         "date": "2025-01-01",
         "title": "Tapahtuma 1",
         "description": "Tapahtuman 1 kuvaus"
       },
-      {
+      "event2": {
         "date": "2025-02-01",
         "title": "Tapahtuma 2",
         "description": "Tapahtuman 2 kuvaus"
       }
-    ]
   }
 }

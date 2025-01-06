@@ -8,19 +8,18 @@
     "home": "Back to homepage",
     "project1": "test1"
   },
-
-    "Timeline": {
-    "events": [
-      {
+  
+  "Timeline": {
+    "event1": {
         "date": "2025-01-01",
-        "title": "Event 1",
-        "description": "Description of event 1"
+        "title": "Tapahtuma 1",
+        "description": "Tapahtuman 1 kuvaus"
       },
-      {
+      "event2": {
         "date": "2025-02-01",
-        "title": "Event 2",
-        "description": "Description of event 2"
+        "title": "Tapahtuma 2",
+        "description": "Tapahtuman 2 kuvaus"
       }
-    ]
-    }
+  }
+    
 }
