@@ -19,6 +19,11 @@
         "date": "2025-02-01",
         "title": "Tapahtuma 2",
         "description": "Tapahtuman 2 kuvaus"
+      },
+      "event3": {
+        "date": "2025-03-01",
+        "title": "Tapahtuma 3",
+        "description": "Tapahtuman 3 kuvaus"
       }
   }
     

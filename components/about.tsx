@@ -21,6 +21,7 @@ function About() {
       }, []); // Empty array ensures this runs once when the component mounts
     
   return (
+   // <Card className="w-80 h-96 bg-gray-100 p-4 shadow-md">
     <Card>
         <CardHeader className="flex justify-between items-center">
         <CardTitle className='text-center yuji-syuku-regular'>Heidi Lilja</CardTitle>

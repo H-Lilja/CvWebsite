@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
   margin: 0;
   padding: 0;
@@ -15,14 +14,37 @@ h1, p {
 }
 
 body {
-  font-size: 18px;  /* You can adjust font size here */
+  height: 100%;
+  font-size: 18px; /* You can adjust font size here */
+  overflow-y: auto;  /* Enable scrolling if content overflows */
+  min-height: 100vh;  /* Ensure the body takes full height */
+  background: linear-gradient(to bottom, white, #f8bbd0); /* Gradient background */
+  margin: 0; /* Remove any default margin */
 }
 
-html, body {
-  height: 100%;  /* Ensure full height for the page */
-  background: linear-gradient(to bottom, white, #f8bbd0);  /* Gradient from white to light pink */
-  margin: 0;  /* Remove any default margin */
+html {
+  height: 100%; /* Ensure html takes full height */
 }
+
+/* layout.css */
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;  /* Ensure the layout takes at least 100% of the viewport height */
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;  /* Ensure the root takes full height */
+}
+
+.main-content {
+  flex-grow: 1;  /* Allow content to fill the available space */
+  overflow-y: auto;  /* Enable scrolling if content exceeds available space */
+}
+
+
 
 
 .yuji-syuku-regular {
@@ -50,3 +72,4 @@ html, body {
   font-style: normal;
   color: black;
 }
+
