@@ -1,5 +1,5 @@
 'use client';
-
+import '../src/app/[locale]/globals.css'
 import { Button } from "@/components/ui/button";
 import { DropdownMenu } from "@/components/ui/dropdown-menu";
 import { type Locale } from "@/src/app/[locale]/locales";
@@ -22,6 +22,7 @@ export const LanguagePicker: React.FC = () => {
   }
 
   return (
+    <div className='inline-block '>
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button type="button" variant="ghost" size="icon">
@@ -51,5 +52,6 @@ export const LanguagePicker: React.FC = () => {
         </DropdownMenuCheckboxItem>
       </DropdownMenuContent>
     </DropdownMenu>
+    </div>
   );
 };

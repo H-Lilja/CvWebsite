@@ -1,14 +1,6 @@
 import '../src/app/[locale]/globals.css'
 import React, { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-  } from "@/components/ui/card"  
 
 function About() {
       const t = useTranslations('HomePage');
@@ -17,24 +9,33 @@ function About() {
       // Set the image URL with a unique query parameter on component mount
       useEffect(() => {
         const randomParam = new Date().getTime(); // Unique timestamp
-        setImageUrl(`/images/my_picture.jpg?timestamp=${randomParam}`);
+        setImageUrl(`/images/IMG_0131.jpg?timestamp=${randomParam}`);
       }, []); // Empty array ensures this runs once when the component mounts
     
   return (
-   // <Card className="w-80 h-96 bg-gray-100 p-4 shadow-md">
-    <Card>
-        <CardHeader className="flex justify-between items-center">
-        <CardTitle className='text-center yuji-syuku-regular'>Heidi Lilja</CardTitle>
-        <img
-        className="w-32 h-32 md:w-48 md:h-48 object-cover rounded-full pointer-events-none"
+    
+    <div className='grid place-items-center overflow-auto' >
+     <h1 className='limelight-big place-self-start'>Heidi Lilja</h1>
+      <img
+        className= "w-96 md:shrink-0 h-auto items-center -mt-28 z-3"
         src={imageUrl} // Use the image URL with the unique query parameter
-        alt="Heidi"
-        />
-        </CardHeader>
-        <CardContent className="source-serif-4">
-        <p>{t('about')}</p>
-        </CardContent>
-    </Card>
+        alt="Heidi"/>
+      
+      <h2 className='limelight-medium text-right -mt-20 md:-mt-16'>{t("myTitle")}</h2>
+      <div className='mb-20 h-96 w-auto bg-white '>
+      <h1 className='yuji-syuku-regular mb-8'>{t("title")}</h1>
+          <p className="text-black source-serif-4">
+              Welcome to my portfolio! I am a full-stack web developer with an AP
+              in Computer Science and passion for coding! I have experience with
+              many fields of programming from Java, Python, and C# to web
+              development with React and JavaScript. I am always looking to learn
+              new technologies and improve my skills. I am currently seeking new
+              opportunities to work on exciting projects, feel free to contact me
+              if you have any questions!
+            </p>
+       </div>
+    </div>
+
   );
 }
 

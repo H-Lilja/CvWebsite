@@ -11,10 +11,9 @@ export default function HomePage() {
   // const locale = useLocale(); // Get the current locale directly from next-intl
 
   return (
-    <main className="flex flex-col items-center px-4 md:px-24 pt-12 min-h-screen overflow-y-auto">
-        <div>
-        <Link href={`/projectTab`}>{t('toProjects')}</Link>
-        <Timeline/>
+    <main className="flex  min-h-screen overflow-y-auto">
+        <div className="w-full mx-auto h-96 mb-10">
+        <About></About>
         </div>
       </main>
   );

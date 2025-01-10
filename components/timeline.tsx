@@ -37,7 +37,7 @@ return (
             
             {/* Conditionally render Separator only if it's not the last item */}
             {index < keys.length - 1 && (
-              <Separator className=" bg-black h-12 mx-auto " orientation="vertical" />
+              <Separator className=" bg-white h-12 mx-auto " orientation="vertical" />
             )}
           </div>
         ))}
