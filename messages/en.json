@@ -6,7 +6,9 @@
     "toProjects": "Projects",
     "myTitle":"Full-Stack Developer | RPA & Automation Specialist",
     "title": " - About me -",
-    "about": "Welcome to my portfolio! I am a full-stack web developer with an AP in Computer Science and passion for coding! I have experience with many fields of programming from Java, Python, and C# to web development with React and JavaScript. I am always looking to learn new technologies and improve my skills. I am currently seeking new opportunities to work on exciting projects, feel free to contact me if you have any questions!"
+    "about": "Welcome to my portfolio! I am a full-stack web developer with an AP in Computer Science and passion for coding! I have experience with many fields of programming from Java, Python, and C# to web development with React and JavaScript. I am always looking to learn new technologies and improve my skills. I am currently seeking new opportunities to work on exciting projects, feel free to contact me if you have any questions!",
+    "skills": "Welcome to my portfolio! I am a full-stack web developer with an AP in Computer Science and passion for coding! I have experience with many fields of programming from Java, Python, and C# to web development with React and JavaScript. I am always looking to learn new technologies and improve my skills. I am currently seeking new opportunities to work on exciting projects, feel free to contact me if you have any questions!",
+    "skillTitle": "Skills"
   },
   "ProjectsPage": {
 

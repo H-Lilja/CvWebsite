@@ -6,7 +6,9 @@
     "toProjects": "Projektit",
     "myTitle":"Full-Stack Kehittäjä | RPA- ja Automaatioasiantuntija",
     "title": "- Tietoa minusta -",
-    "about": "Olen täysipäiväinen web-kehittäjä, jolla on AP-tutkinto tietojenkäsittelytieteessä ja intohimo koodaukseen! Minulla on kokemusta monilta ohjelmoinnin alueilta, kuten Java, Python, C#, ja web-kehitys Reactilla ja JavaScriptillä. Etsin aina uusia mahdollisuuksia oppia uusia teknologioita ja parantaa taitojani. Etsin parhaillaan uusia projekteja, joihin voin osallistua, ota yhteyttä jos sinulla on kysyttävää!"
+    "about": "Olen täysipäiväinen web-kehittäjä, jolla on AP-tutkinto tietojenkäsittelytieteessä ja intohimo koodaukseen! Minulla on kokemusta monilta ohjelmoinnin alueilta, kuten Java, Python, C#, ja web-kehitys Reactilla ja JavaScriptillä. Etsin aina uusia mahdollisuuksia oppia uusia teknologioita ja parantaa taitojani. Etsin parhaillaan uusia projekteja, joihin voin osallistua, ota yhteyttä jos sinulla on kysyttävää!",
+    "skills": "Welcome to my portfolio! I am a full-stack web developer with an AP in Computer Science and passion for coding! I have experience with many fields of programming from Java, Python, and C# to web development with React and JavaScript. I am always looking to learn new technologies and improve my skills. I am currently seeking new opportunities to work on exciting projects, feel free to contact me if you have any questions!",
+    "skillTitle": "Taidot"
   },
   "ProjectsPage": {
     "project1": "projekti1"

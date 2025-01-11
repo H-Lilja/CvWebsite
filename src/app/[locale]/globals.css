@@ -18,14 +18,17 @@ body {
   font-size: 18px; /* You can adjust font size here */
   overflow-y: auto;  /* Enable scrolling if content overflows */
   min-height: 100vh;  /* Ensure the body takes full height */
-  background-color: #fab6dc;
- /* background: linear-gradient(to bottom, white, #f8bbd0); /* Gradient background */
+  /* background-color: #fab6dc; */
+  background: linear-gradient(to bottom, #fab6dc 95%, white); 
   margin: 0; /* Remove any default margin */
   overflow: auto;
 }
 
 html {
   height: 100%; /* Ensure html takes full height */
+}
+header{
+  z-index: -400;
 }
 
 /* layout.css */
@@ -50,9 +53,8 @@ html {
   position: relative; /* Make the container the reference point for absolute positioning */
 }
 
-.header {
-  z-index: -20; /* Ensure header text stays above the image */
-}
+
+
 .about {
   overflow-y: auto;
 }
@@ -136,4 +138,50 @@ main {
   font-weight: 400;
   font-style: normal;
   color: white;
+}
+
+@keyframes rainbow {
+  0% {
+    border-color: red;
+  }
+  14% {
+    border-color: orange;
+  }
+  28% {
+    border-color: yellow;
+  }
+  42% {
+    border-color: green;
+  }
+  57% {
+    border-color: blue;
+  }
+  71% {
+    border-color: indigo;
+  }
+  85% {
+    border-color: violet;
+  }
+  100% {
+    border-color: red;
+  }
+}
+
+.rainbow-animation {
+  animation: rainbow 10s linear infinite;
+  /* border-bottom-style: solid;
+  border-width: 1px; */
+  /* border-radius: 0 0 8px 8px; */
+  /* box-sizing: border-box; */
+}
+
+.handwritten-border {
+  font-family: 'Dancing Script', cursive; /* You can choose any cursive font here */
+  font-size: 20px;
+  padding: 20px;
+  border: 5px solid #3A3A3A;
+  border-radius: 10px;
+  background-color: #FDF6E3;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  display: inline-block;
 }
