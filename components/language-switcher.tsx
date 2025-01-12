@@ -27,11 +27,11 @@ export const LanguagePicker: React.FC = () => {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button type="button" variant="ghost" size="icon">
-          <GlobeIcon className="size-5 text-white transition-transform" />
+          <GlobeIcon className="size-5 text-black transition-transform" />
         </Button>
       </DropdownMenuTrigger>
 
-      <DropdownMenuContent className=" text-white source-serif-4" align="end">
+      <DropdownMenuContent className=" text-pink source-serif-4" align="end">
         <DropdownMenuCheckboxItem
           checked={locale === "en"}
           onClick={() => {

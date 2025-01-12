@@ -23,10 +23,17 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider messages={messages}>
-      {/* Include the Header component */}
-      <Header />
-      {/* Render the localized children */}
-      {children}
+      <div className="flex flex-col h-screen">
+        <div className="top-0 z-10">
+          <Header />
+        </div>
+
+        {/* Scrollable content area */}
+        <div className="sticky top-0 overflow-y-auto p-4">
+          {children}
+        </div>
+      </div>
     </NextIntlClientProvider>
+    
   );
 }

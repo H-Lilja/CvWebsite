@@ -9,119 +9,49 @@
 }
 
 h1, p {
-  color: rgb(0, 0, 0); /* White text color for contrast */
-  text-align: center;
+  color: rgb(255, 255, 255); /* White text color for contrast */
 }
 
 body {
   height: 100%;
   font-size: 18px; /* You can adjust font size here */
-  overflow-y: auto;  /* Enable scrolling if content overflows */
+  /* overflow-y: auto;   */
   min-height: 100vh;  /* Ensure the body takes full height */
-  /* background-color: #fab6dc; */
-  background: linear-gradient(to bottom, #fab6dc 95%, white); 
+  background-color: black;
+  /* background: linear-gradient(90deg ,#271924, #000000); */
+   /* background: linear-gradient(135deg, #5c3f56,#000000, #000000, #000000); */
+  /* background: linear-gradient(135deg, #FFB3BA, #FFDFBA, #FFFFBA, #BAFFBA, #BAE1FF); */
+  /* background-color: linear-gradient(#FFB3BA, #fab6dc 50%, #FFDFBA, #FFFFBA, #BAFFBA, #BAE1FF); */
   margin: 0; /* Remove any default margin */
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 html {
   height: 100%; /* Ensure html takes full height */
 }
-header{
-  z-index: -400;
-}
-
-/* layout.css */
-.layout {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;  /* Ensure the layout takes at least 100% of the viewport height */
-}
-
-#root {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;  /* Ensure the root takes full height */
-}
-
-.main-content {
-  flex-grow: 1;  /* Allow content to fill the available space */
-  overflow-y: auto;  /* Enable scrolling if content exceeds available space */
-}
-
-.container {
-  position: relative; /* Make the container the reference point for absolute positioning */
-}
-
-
-
-.about {
-  overflow-y: auto;
-}
-
-@keyframes hueShift {
-  0% {
-    filter: saturate(50); /* Starting hue */
-  }
-  33% {
-    filter: saturate(100); /* Rotate to achieve a color change (e.g., pink) */
-  }
-  66% {
-    filter: saturate(150); /* Rotate to achieve another color (e.g., gray) */
-  }
-  100% {
-    filter: saturate(200); /* Complete the cycle back to the original hue */
-  }
-}
-
-
-.overlayImage {
-  position: absolute; /* Absolute positioning allows us to move the image over the header */
-  top: 0; 
-  left: 0; /* Align to the left of the container */
-  width: auto; /* Make the image span across the full width */
-  height: 100%; /* Set the image height to 50% of the viewport height */
-  object-fit:contain; /* Ensure the image covers the area without stretching */
-  z-index: 5; /* Place the image behind the header and content */
-  overflow-y: auto;
-
-}
-
-.overlayHue{
-  filter: hue-rotate(90deg);
-}
-
 
 main {
   padding-top: 1px; /* Ensure there's enough padding below the image */
 }
-
-
 
 .yuji-syuku-regular {
   font-size: 2rem;
   font-family: "Yuji Syuku", serif;
   font-weight: 500;
   font-style: normal;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
-}
-
-.splash-regular {
-  font-family: "Splash", serif;
-  font-size: 2rem;
-  font-weight: 900;
-  font-style: normal;
-  color: rgb(0, 0, 0);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .source-serif-4 {
   font-family: "Source Serif 4", serif;
-  font-optical-sizing: auto;
+  font-size: 20;
   font-weight: 400;
   font-style: normal;
+  color: rgb(255, 255, 255);
+
 }
+
 
 .limelight-big {
   font-size: 80px;
@@ -129,15 +59,16 @@ main {
   font-family: "Limelight", serif;
   font-weight: 400;
   font-style: normal;
-  color: white;
+  color: rgb(255, 255, 255);
 }
+
 .limelight-medium {
   font-size: 30px;
   z-index: 20;
   font-family: "Limelight", serif;
   font-weight: 400;
   font-style: normal;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 @keyframes rainbow {
@@ -169,19 +100,48 @@ main {
 
 .rainbow-animation {
   animation: rainbow 10s linear infinite;
-  /* border-bottom-style: solid;
-  border-width: 1px; */
+  border-bottom-style: solid;
+  border-width: 1px; 
   /* border-radius: 0 0 8px 8px; */
   /* box-sizing: border-box; */
 }
 
-.handwritten-border {
-  font-family: 'Dancing Script', cursive; /* You can choose any cursive font here */
-  font-size: 20px;
-  padding: 20px;
-  border: 5px solid #3A3A3A;
-  border-radius: 10px;
-  background-color: #FDF6E3;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  display: inline-block;
+.molle-regular-italic {
+  font-family: "Molle", serif;
+  font-weight: 800;
+  font-style: italic;
+  color: pink;
+  size: 120px;
 }
+
+.meow-script-regular {
+  font-family: "Meow Script", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40;
+  color: rgb(255, 255, 255);
+  text-shadow: #ffd1f5;
+}
+
+
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.header-bg {
+  /* background-color: rgb(0, 0, 0); */
+  /* background: linear-gradient(135deg, #FFB3BA, #FFDFBA, #FFFFBA, #BAFFBA, #BAE1FF);
+  background-size: 400% 400%; */
+  position: relative;  
+  /* animation: gradientBackground 15s ease infinite; */
+}
+
+

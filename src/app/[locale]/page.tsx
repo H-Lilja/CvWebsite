@@ -11,7 +11,7 @@ export default function HomePage() {
   // const locale = useLocale(); // Get the current locale directly from next-intl
 
   return (
-    <main className="min-h-screen overflow-y-auto">
+    <main className="min-h-screen">
         <div className="w-full mx-auto h-96 mb-10">
         <About></About>
         </div>
