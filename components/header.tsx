@@ -12,8 +12,7 @@ export const Header: React.FC = () => {
   const t = useTranslations('HomePage');
 
   return (
-    // <div class="w-32 h-32 rounded-md bg-gradient-to-br from-indigo-600 to-pink-600 p-1"></div>
-    <header className="flex top-0 justify-between items-center header-bg">
+    <header className="flex top-0 justify-between items-center">
       <h1 className='meow-script-regular md:flex md:items-center'>Heidi Lilja</h1> 
       <div className='md:hidden'><LanguagePicker ></LanguagePicker></div>
       <div className="hidden md:flex items-center ml-auto">

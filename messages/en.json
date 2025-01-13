@@ -2,12 +2,13 @@
   "HomePage": {
     "home": "Home",
     "toContacts":"Contact info",
+    "greeting":"Hi! Welcome to my portfolio. I am",
     "toRecommendations":"Recommendations",
     "toProjects": "Projects",
     "myTitle":"Full-Stack Developer | RPA & Automation Specialist",
-    "title": " - About me -",
-    "about": "Welcome to my portfolio! I am a full-stack web developer with an AP in Computer Science and passion for coding! I have experience with many fields of programming from Java, Python, and C# to web development with React and JavaScript. I am always looking to learn new technologies and improve my skills. I am currently seeking new opportunities to work on exciting projects, feel free to contact me if you have any questions!",
-    "skills": "Welcome to my portfolio! I am a full-stack web developer with an AP in Computer Science and passion for coding! I have experience with many fields of programming from Java, Python, and C# to web development with React and JavaScript. I am always looking to learn new technologies and improve my skills. I am currently seeking new opportunities to work on exciting projects, feel free to contact me if you have any questions!",
+    "title": "About me",
+    "about": "I am a developer new to frontend, but I have two years of experience as an RPA developer. I am passionate about new technologies and actively seeking new opportunities where I can apply my skills and continue learning. I am open to new challenges and excited to see what the future holds. Feel free to reach out if you'd like to discuss further or if I can assist you in any way!",
+    "skills": "I am proficient with the following technologies:",
     "skillTitle": "Skills"
   },
   "ProjectsPage": {
@@ -17,19 +18,28 @@
   
   "Timeline": {
     "event1": {
-        "date": "2025-01-01",
-        "title": "Tapahtuma 1",
-        "description": "Tapahtuman 1 kuvaus"
-      },
+        "date": "2023",
+        "title": "Bachelor of Business Administration (AMK), Information Processing",
+        "description": "Graduated Satakunta University of Applied Sciences as Bachelor of Business Administration (AMK), Information Processing",
+        "pic": ".\\images\\graduation-cap.svg"
+        },
       "event2": {
-        "date": "2025-02-01",
-        "title": "Tapahtuma 2",
-        "description": "Tapahtuman 2 kuvaus"
+        "date": "2022-2025",
+        "title": "RPA-Developer",
+        "description": "Worked as a RPA-developer,worked on over 30 customer projects",
+        "pic": ".\\images\\briefcase-business.svg"
       },
       "event3": {
-        "date": "2025-03-01",
-        "title": "Tapahtuma 3",
-        "description": "Tapahtuman 3 kuvaus"
+        "date": "2018",
+        "title": "Game Technology Track",
+        "description": "1-year game industry training at Ahlmann edu",
+        "pic": ".\\images\\graduation-cap.svg"
+      },
+      "event4": {
+        "date": "2018",
+        "title": "High School Graduate",
+        "description":"Graduated from Tampereen Yhteiskoulun lukio",
+        "pic": ".\\images\\graduation-cap.svg"
       }
   }
     

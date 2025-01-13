@@ -105,15 +105,11 @@ main {
   /* border-radius: 0 0 8px 8px; */
   /* box-sizing: border-box; */
 }
-
-.molle-regular-italic {
-  font-family: "Molle", serif;
-  font-weight: 800;
-  font-style: italic;
-  color: pink;
-  size: 120px;
+.abel-regular {
+  font-family: "Abel", serif;
+  font-weight: 400;
+  font-style: normal;
 }
-
 .meow-script-regular {
   font-family: "Meow Script", serif;
   font-weight: 400;
@@ -134,14 +130,6 @@ main {
   100% {
     background-position: 0% 50%;
   }
-}
-
-.header-bg {
-  /* background-color: rgb(0, 0, 0); */
-  /* background: linear-gradient(135deg, #FFB3BA, #FFDFBA, #FFFFBA, #BAFFBA, #BAE1FF);
-  background-size: 400% 400%; */
-  position: relative;  
-  /* animation: gradientBackground 15s ease infinite; */
 }
 
 

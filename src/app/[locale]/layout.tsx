@@ -29,7 +29,7 @@ export default async function LocaleLayout({
         </div>
 
         {/* Scrollable content area */}
-        <div className="sticky top-0 overflow-y-auto p-4">
+        <div className="flex top-0 overflow-y-auto">
           {children}
         </div>
       </div>
