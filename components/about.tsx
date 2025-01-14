@@ -17,17 +17,17 @@ function About() {
   return (
     
     <div className='z-2 mt-4 grid place-items-center' >
-     <h1 className='source-serif-4 place-self-start ml-4'>{t("greeting")}</h1>
-     <h1 className='limelight-big place-self-start ml-3 '>Heidi Lilja</h1>
-     <div className='flex gap-1 place-self-start ml-4'>
+     <h1 className='source-serif-4 place-self-start ml-4 mt-2 lg:mt-1'>{t("greeting")}</h1>
+     <h1 className='limelight-big place-self-start ml-3 mt-1 lg:mt-0 '>Heidi Lilja</h1>
+     <div className='flex gap-1 place-self-start ml-4 mt-72 lg:mt-0 mr-10 lg:mr-0'>
      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff80c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-chevrons-right place-self-start"><path d="m6 17 5-5-5-5"/><path d="m13 17 5-5-5-5"/></svg>
-     <h2 className='source-serif-4 place-self-start -mt-1'>{t("myTitle")}</h2>
+     <h2 className='source-serif-4 place-self-start -mt-1 mr-12 lg:mr-0'>{t("myTitle")}</h2>
      </div>
       <img
-        className= "w-32 h-32 md:w-80 md:h-80 object-cover rounded-full ml-48 -mr-40 -mt-20 place-self-end md:place-self-center"
+        className= "w-56 h-56 lg:w-80 lg:h-80 object-cover rounded-full ml-5 lg:ml-0 lg:mr-60 -mt-80 lg:-mt-20 lg:place-self-end place-self-start"
         src={imageUrl} 
         alt="Heidi"/>
-      <div className='flex gap-3 place-self-end mb-40 mr-32 mt-5'>
+      <div className='flex gap-3 place-self-start lg:place-self-end mb-20 lg:mb-24 mr-0 lg:mr-32 ml-6 lg:ml-0 mt-16 lg:mt-5'>
         <a href="https://www.instagram.com/heidiliilja/" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff80c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>       
         </a>
@@ -39,42 +39,51 @@ function About() {
       </div>
 
 
-      <div className='mb-20 w-auto bg-zinc-800'>
-        {/* Title and text for about section */}
-          <h1 className='abel-regular text-4xl mt-4 mb-8 ml-9'>{t("title")}</h1>
-          <p className="abel-regular mx-9">{t("about")}</p>
+      <div className='mb-28 lg:mb-20 w-auto bg-zinc-800'>
+        {/* Titles for about and skills */}
+        <div className="lg:flex grid mt-4">
+          <h1 className='abel-regular text-4xl  mx-9'>{t("title")}</h1>
+          <h1 className='hidden lg:flex abel-regular text-4xl  mb-2 ml-auto mr-44'>{t("skillTitle")}</h1>
+        </div>
           {/* Title and text for skill section before > part */}
-          <h1 className='abel-regular text-4xl mt-8 mb-8 ml-9'>{t("skillTitle")}</h1>
-          <p className="abel-regular mx-9 mb-2">{t("skills")}</p>
- 
-          {/* Divs to style skills */}
-          <div className='flex gap-2 ml-9'>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff80c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>          
-          <p>Python</p>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff80c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>          
-          <p>C#</p>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff80c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>          
-          <p>React</p>
-           </div>
-          {/* Divs to style skills row2 */}
-          <div className='flex gap-2 ml-9'>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff80c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>          
-          <p>UiPath</p>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff80c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>          
-          <p>HTML & CSS</p>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff80c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>          
-          <p>Next.js</p>
-          </div>
-          {/* Divs to style skills row3 */}
-          <div className='flex gap-2 ml-9 mb-7'>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff80c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>          
-          <p>Typescript</p>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff80c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>          
-          <p>RPA</p>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff80c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>          
-          <p>Unity</p>
-          </div>
+         <div className="grid lg:flex">
+          <p className="abel-regular ml-9 mr-9 lg:mr-64 lg:text-start mb-8">{t("about")}</p>
+          <h1 className='lg:hidden flex abel-regular text-4xl  mb-2 ml-9 lg:ml-auto mr-44'>{t("skillTitle")}</h1>
+          <p className="abel-regular mr-5 text-nowrap mb-28 lg:mb-0 ml-9 lg:ml-0">{t("skills")}</p>
+        </div>
 
+        {/* Div to contain the styled skills */}
+        <div className='relative'>
+        <div className='absolute top-0  left-9 lg:right-0 -mt-24 lg:-mt-32 mb-20 lg:place-self-end'>
+              {/* Divs to style skills */}
+              <div className='flex mr-16'>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff80c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>          
+              <p>Python</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff80c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>          
+              <p>C#</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff80c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>          
+              <p>Next.js</p>
+              </div>
+              {/* Divs to style skills row2 */}
+              <div className='flex  mr-10'>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff80c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>          
+              <p>UiPath</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff80c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>          
+              <p>HTML & CSS</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff80c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>          
+              <p>React</p>
+              </div>
+              {/* Divs to style skills row3 */}
+              <div className='flex  mr-20'>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff80c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>          
+              <p>Typescript</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff80c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>          
+              <p>RPA</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff80c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>          
+              <p>Unity</p>
+              </div>
+          </div>
+         </div>
        </div>
     </div>
 
