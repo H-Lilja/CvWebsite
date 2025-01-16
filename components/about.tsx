@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 
 
 function About() {
+  // get the json selection for homePAge
       const t = useTranslations('HomePage');
       const [imageUrl, setImageUrl] = useState('');
     
@@ -17,16 +18,22 @@ function About() {
   return (
     
     <div className='z-2 mt-4 grid place-items-center' >
+      {/* first title in page */}
      <h1 className='source-serif-4 place-self-start ml-4 mt-2 lg:mt-1'>{t("greeting")}</h1>
+     {/* name title */}
      <h1 className='limelight-big place-self-start ml-3 mt-1 lg:mt-0 '>Heidi Lilja</h1>
+     {/* jobtitle after name and svg for the > mark */}
      <div className='flex gap-1 place-self-start ml-4 mt-72 lg:mt-0 mr-10 lg:mr-0'>
      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff80c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-chevrons-right place-self-start"><path d="m6 17 5-5-5-5"/><path d="m13 17 5-5-5-5"/></svg>
      <h2 className='source-serif-4 place-self-start -mt-1 mr-12 lg:mr-0'>{t("myTitle")}</h2>
      </div>
+
+     {/* Image of self in page */}
       <img
         className= "w-56 h-56 lg:w-80 lg:h-80 object-cover rounded-full ml-5 lg:ml-0 lg:mr-60 -mt-80 lg:-mt-20 lg:place-self-end place-self-start"
         src={imageUrl} 
         alt="Heidi"/>
+        {/* Icons and links for socials */}
       <div className='flex gap-3 place-self-start lg:place-self-end mb-20 lg:mb-24 mr-0 lg:mr-32 ml-6 lg:ml-0 mt-16 lg:mt-5'>
         <a href="https://www.instagram.com/heidiliilja/" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff80c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>       

@@ -13,13 +13,43 @@
     "timelineText": "Lyhyt aikajana koulutuksestani ja viimeisimmistä työpaikoistani.",
     "contactLink": "Psst! Voit saada koko CV:ni ottamalla yhteyttä minuun."
   },
-  "ProjectsPage": {
-    "project1": "projekti1"
+
+"Projects": {
+    "event1": {
+        "date": "2023",
+        "title": "Bachelor of Business Administration (AMK), Information Processing",
+        "description": "Graduated Satakunta University of Applied Sciences as Bachelor of Business Administration (AMK), Information Processing",
+        "pic": ".\\images\\graduation-cap.svg"
+        },
+      "event2": {
+        "date": "2022-2025",
+        "title": "RPA-Developer",
+        "description": "Worked as a RPA-developer,worked on over 30 customer projects",
+        "pic": ".\\images\\briefcase-business.svg"
+      },
+      "event3": {
+        "date": "2019",
+        "title": "Game Technology Track",
+        "description": "1-year game industry training at Ahlman edu",
+        "pic": ".\\images\\graduation-cap.svg"
+      },
+      "event4": {
+        "date": "2018",
+        "title": "High School Graduate",
+        "description":"Graduated from Tampereen Yhteiskoulun lukio",
+        "pic": ".\\images\\graduation-cap.svg"
+      }
   },
+  
   
   "Contact": {
     "title": "Klikkaa haluamaasi yhteydenottotapaa",
     "tel": "Ole hyvä ja lähetä minulle sähköpostia tai ota yhteyttä LinkedInissä saadaksesi puhelinnumeroni."
+  },
+
+  "ProjectsTitles":{
+    "mainTitle":"Projects"
+
   },
 
   "Timeline": {

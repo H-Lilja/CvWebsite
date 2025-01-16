@@ -14,7 +14,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   if (!isMounted) {
     return null; // Optionally, you could return a loading spinner here
   }
-
+//rootlayout
   return (
     <html lang="en">
       <head>

@@ -13,30 +13,29 @@
     "timelineText": "Shortened timeline of my education and latest jobs.",
     "contactLink": "Psst! You can get my whole CV by contacting me."
   },
+
+  "ProjectsTitles":{
+    "mainTitle":"Projects"
+
+  },
   "Projects": {
     "event1": {
-        "date": "2023",
-        "title": "Bachelor of Business Administration (AMK), Information Processing",
-        "description": "Graduated Satakunta University of Applied Sciences as Bachelor of Business Administration (AMK), Information Processing",
-        "pic": ".\\images\\graduation-cap.svg"
+        "date": "2025",
+        "title": "Portfolio page",
+        "description": "This current website. Technologies used include, for example, Next.js, React, and TypeScript.",
+        "pic": ".\\images\\Vr-Robot-Example.png"
         },
       "event2": {
-        "date": "2022-2025",
-        "title": "RPA-Developer",
-        "description": "Worked as a RPA-developer,worked on over 30 customer projects",
-        "pic": ".\\images\\briefcase-business.svg"
+        "date": "2024",
+        "title": "VR-Robot",
+        "description": "A small vr robot, that gets the timetable from wanted input cities and writes it for next 8 hours. Creates excel file. Created with uiPath studio",
+        "pic": ".\\images\\portfolio.png"
       },
       "event3": {
         "date": "2019",
-        "title": "Game Technology Track",
-        "description": "1-year game industry training at Ahlman edu",
-        "pic": ".\\images\\graduation-cap.svg"
-      },
-      "event4": {
-        "date": "2018",
-        "title": "High School Graduate",
-        "description":"Graduated from Tampereen Yhteiskoulun lukio",
-        "pic": ".\\images\\graduation-cap.svg"
+        "title": "Clean VR",
+        "description": "A very amateur VR game made with a small group, Using VR, Unity and C# as technologies",
+        "pic": ".\\images\\Clean VR Steamissä.png"
       }
   },
   
