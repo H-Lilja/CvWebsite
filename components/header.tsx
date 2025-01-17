@@ -9,27 +9,38 @@ import { Button } from "@/components/ui/button"
 
 
 export const Header: React.FC = () => {
+  // gets the used language based on if url is en or fi
   const t = useTranslations('HomePage');
 
   return (
     <header className="flex top-0 justify-between items-center">
+      {/* leftmost cursive heidi lilja text */}
       <h1 className='meow-script-regular md:flex md:items-center'>Heidi Lilja</h1> 
+      {/* on smaller screeen the links are in dropdownmenu so the language picker must be dealt with outside of it */}
       <div className='md:hidden -mr-20'><LanguagePicker ></LanguagePicker></div>
+      {/* the top bar links. Hidden on small screen */}
       <div className="hidden md:flex items-center ml-auto">
+        {/* you can change language between en and fi  */}
         <LanguagePicker ></LanguagePicker>
+        {/* first button is to the main page */}
         <Button className='my-3' variant={'link'} asChild>
         <Link href={`/`} className="z-10 inline-block source-serif-4 mx-2" >{t('home')}</Link>
         </Button>
+        {/* the svg files are separators */}
         <svg  xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="pink" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-sparkle"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg>
+        {/* Link to the projects page */}
         <Button variant={'link'} asChild>
         <Link className=" z-10 inline-block source-serif-4 mx-2" href={`/projectTab`}>{t('toProjects')}</Link>
         </Button>
+         {/* the svg files are separators */}
         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="pink" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-sparkle"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg>
+        {/* Link to the contacts page */}
         <Button variant={'link'} asChild>       
         <Link className=" z-10 inline-block source-serif-4 mx-2" href={`/contactInfo`}>{t('toContacts')}</Link>
         </Button>    
       </div>
 
+      {/* dropdown menu showing only on small screen */}
       <div className='md:hidden flex mt-2 mr-3'>
           <DropdownMenu>
           <DropdownMenuTrigger>
