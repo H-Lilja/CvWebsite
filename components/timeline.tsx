@@ -3,12 +3,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Link } from '@/src/i18n/routing';
 
-//layout for the card
-interface Event {
-  date: string;
-  title: string;
-  description: string;
-}
 
 export default function Timeline() {
   // for collection of events

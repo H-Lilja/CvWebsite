@@ -1,5 +1,5 @@
 'use client'; // Add this line to mark the file as a client component
-import React, {useState,useEffect } from 'react';
+import React from 'react';
 import { LanguagePicker } from "./language-switcher";
 import { Link } from '@/src/i18n/routing';
 import { useTranslations } from 'next-intl';

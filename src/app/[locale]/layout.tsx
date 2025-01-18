@@ -5,17 +5,20 @@ import { routing } from '@/src/i18n/routing';
 import { Header } from '@/components/header';
 import Footer from '@/components/footer';
 
+// Define the type for valid locales
+type Locale = typeof routing.locales[number];
+
 export default async function LocaleLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: { locale: Locale };
 }) {
-  const { locale } = await params;
+  const { locale } = params; // No need for 'await'
 
   // Ensure that the incoming locale is valid
-  if (!routing.locales.includes(locale as any)) {
+  if (!routing.locales.includes(locale)) {
     notFound();
   }
 
@@ -33,12 +36,11 @@ export default async function LocaleLayout({
         <div className="overflow-y-auto">
           {children}
         </div>
-        <footer >
-        <Footer></Footer>
+
+        <footer>
+          <Footer />
         </footer>
       </div>
-
     </NextIntlClientProvider>
-    
   );
 }

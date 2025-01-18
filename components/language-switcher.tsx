@@ -3,12 +3,12 @@ import '../src/app/[locale]/globals.css'
 import { Button } from "@/components/ui/button";
 import { DropdownMenu } from "@/components/ui/dropdown-menu";
 import { type Locale } from "@/src/app/[locale]/locales";
-import { DropdownMenuCheckboxItem, DropdownMenuContent, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger,DropdownMenuItem } from "@radix-ui/react-dropdown-menu";
+import { DropdownMenuCheckboxItem, DropdownMenuContent, DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu";
 import { GlobeIcon } from "lucide-react";
 import { useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
 import React from "react";
-import { Link } from '@/src/i18n/routing';
+
 
 export const LanguagePicker: React.FC = () => {
   const locale = useLocale() as Locale;
