@@ -8,7 +8,7 @@ export default function HomePage() {
   //About page/Mainpage
   return (
     <main className="min-h-screen">
-        <div className="mx-auto mb-10">
+        <div className="mb-10">
         <About></About>
         <Timeline></Timeline>
         </div>

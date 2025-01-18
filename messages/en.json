@@ -50,16 +50,16 @@
   },
   "Timeline": {
     "event1": {
+      "date": "2022-2025",
+      "title": "RPA-Developer",
+      "description": "Worked as a RPA-developer,worked on over 30 customer projects",
+      "icon": "work"
+        },
+      "event2": {
         "date": "2023",
         "title": "Bachelor of Business Administration (AMK), Information Processing",
         "description": "Graduated Satakunta University of Applied Sciences as Bachelor of Business Administration (AMK), Information Processing",
         "icon": "school"
-        },
-      "event2": {
-        "date": "2022-2025",
-        "title": "RPA-Developer",
-        "description": "Worked as a RPA-developer,worked on over 30 customer projects",
-        "icon": "work"
       },
       "event3": {
         "date": "2019",

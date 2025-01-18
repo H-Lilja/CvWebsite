@@ -16,9 +16,9 @@ import { Button } from "@/components/ui/button"
 return (
 <div className='mb-2 '>
   <div className='grid gap-2'>
-  <h1 className='abel-regular text-4xl text-center ml-0 md:-ml-24 mb-4'>{k("mainTitle")}</h1>
+  <h1 className='abel-regular text-4xl text-center ml-0 md:-ml-24 mb-4 lg:text-6xl'>{k("mainTitle")}</h1>
     </div>
-      <div className="grid gap-5  grid-cols-1 md:grid-cols-3 mx-3 auto-rows-max" >
+      <div className="grid gap-5  grid-cols-1 lg:grid-cols-3 mx-3 auto-rows-max" >
         {keys.map((key) => (
           <div className="projects p-6" key={key}>
                 <Image
@@ -33,25 +33,25 @@ return (
                   }
                   style={imageStyle}
                   alt="Icon"
-                  width={400} // Set width as per requirement
-                  height={400} // Set height as per requirement
+                  width={800} // Set width as per requirement
+                  height={800} // Set height as per requirement
                         />
-                <div className='text-center p-1'>
+                <div className='text-center p-1 md:text-xl lg:text-3xl'>
                   <p className='abel-regular'>{t(`${key}.date`)}</p>
                   <p className='abel-regular'>{t(`${key}.title`)}</p>
                   <p className='abel-regular'>{t(`${key}.description`)}</p>
                   {/* Conditionally render the Link if the description URL is valid */}
                   {t(`${key}.url`) && t(`${key}.url`) !== "-" && (
-                    <Button className='button m-2' variant={'outline'} asChild>
+                    <Button className='button m-2 lg:mt-4' variant={'outline'} asChild>
                     <Link 
-                      className="abel-regular text-start hover:underline" 
+                      className="abel-regular text-start hover:underline lg:text-xl" 
                       href={t(`${key}.url`)}
                     > {k('visitCode')}</Link></Button>)}
                    {/* Conditionally render the Link if the description URL is valid */}
                   {t(`${key}.url2`) && t(`${key}.url2`) !== "-" && (
                     <Button className='button m-2' variant={'outline'} asChild>
                     <Link 
-                      className="abel-regular text-start hover:underline" 
+                      className="abel-regular text-start hover:underline lg:text-xl lg:mt-4" 
                       href={t(`${key}.url2`)}
                     > {k('visitProject')}</Link></Button>)}
                 </div>

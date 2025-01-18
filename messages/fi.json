@@ -56,16 +56,16 @@
 
   "Timeline": {
     "event1": {
+      "date": "2022-2025",
+      "title": "RPA-Kehittäjä",
+      "description": "Työ rpa-kehittäjänä, yli 30 asiakasprojektia.",
+      "icon": "work"
+        },
+      "event2": {
         "date": "2023",
         "title": "Tradenomi (AMK), Tietojenkäsittely",
         "description": "Valmistuminen Satakunnan Ammattikorkeakoulusta: Tradenomi (AMK), Tietojenkäsittely",
         "icon": "school"
-        },
-      "event2": {
-        "date": "2022-2025",
-        "title": "RPA-Kehittäjä",
-        "description": "Työ rpa-kehittäjänä, yli 30 asiakasprojektia.",
-        "icon": "work"
       },
       "event3": {
         "date": "2019",
