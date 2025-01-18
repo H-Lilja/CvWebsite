@@ -22,9 +22,9 @@ interface Event {
 return (
 <div className='mb-2 '>
   <div className='grid gap-2'>
-  <h1 className='abel-regular text-4xl text-center ml-6 md:-ml-24 mb-4'>{k("mainTitle")}</h1>
+  <h1 className='abel-regular text-4xl text-center ml-0 md:-ml-24 mb-4'>{k("mainTitle")}</h1>
     </div>
-      <div className="grid gap-5 grid-cols-3 mx-3 auto-rows-max" >
+      <div className="grid gap-5  grid-cols-1 md:grid-cols-3 mx-3 auto-rows-max" >
         {keys.map((key, index) => (
           <div className="projects p-6" key={key}>
                 <Image

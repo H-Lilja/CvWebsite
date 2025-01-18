@@ -7,7 +7,9 @@ function About() {
   // get the json selection for homePAge
       const t = useTranslations('HomePage');
       const [imageUrl, setImageUrl] = useState('');
-    
+      const skillTitle = t('skillTitle');
+      // the margin right property needs to be different in different languages
+      const pClass = skillTitle === 'Taidot' ? "abel-regular mr-20 text-nowrap mb-28 lg:mb-0 ml-9 lg:ml-0" : "abel-regular mr-5 text-nowrap mb-28 lg:mb-0 ml-9 lg:ml-0"; // Example styles
       // Set the image URL with a unique query parameter on component mount
       useEffect(() => {
         const randomParam = new Date().getTime(); // Unique timestamp
@@ -50,18 +52,20 @@ function About() {
         {/* Titles for about and skills */}
         <div className="lg:flex grid mt-4">
           <h1 className='abel-regular text-4xl  mx-9'>{t("title")}</h1>
-          <h1 className='hidden lg:flex abel-regular text-4xl  mb-2 ml-auto mr-44'>{t("skillTitle")}</h1>
+          <h1 className='hidden lg:flex abel-regular text-4xl  mb-2 ml-auto  mr-44'>{t("skillTitle")}</h1>
         </div>
-          {/* Title and text for skill section before > part */}
+          {/* Title and text for skill section before > part the sections are stacked on mobile,
+          hence why the titles are twice*/}
          <div className="grid lg:flex">
           <p className="abel-regular ml-9 mr-9 lg:mr-64 lg:text-start mb-8">{t("about")}</p>
-          <h1 className='lg:hidden flex abel-regular text-4xl  mb-2 ml-9 lg:ml-auto mr-44'>{t("skillTitle")}</h1>
-          <p className="abel-regular mr-5 text-nowrap mb-28 lg:mb-0 ml-9 lg:ml-0">{t("skills")}</p>
+          <h1 className='lg:hidden flex abel-regular text-4xl  mb-2 ml-9 mr-44'>{t("skillTitle")}</h1>
+          {/* skills is the little sub-title before the > marked skills */}
+          <p className={pClass}>{t("skills")}</p>
         </div>
 
         {/* Div to contain the styled skills */}
         <div className='relative'>
-        <div className='absolute top-0  left-9 lg:right-0 -mt-24 lg:-mt-32 mb-20 lg:place-self-end'>
+        <div className='absolute top-0  left-9 lg:right-0 -mt-24 lg:-mt-28 mb-20 lg:place-self-end'>
               {/* Divs to style skills */}
               <div className='flex mr-16'>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff80c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>          

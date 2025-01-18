@@ -22,12 +22,12 @@ export default function Timeline() {
     <div className='mb-2'>
       <div className='grid'>
         {/* Main headline about timeline */}
-        <h1 className='abel-regular text-4xl text-center ml-6 md:-ml-24 mb-4'>{k("timelineText")}</h1>
+        <h1 className='abel-regular text-4xl text-center mb-4 p-2'>{k("timelineText")}</h1>
         {/* Link to projects */}
-        <Link className="abel-regular text-2xl ml-12 md:ml-60 mb-10 text-pink-300 hover:underline" href={`/contactInfo`}>{k('contactLink')}</Link>
+        <Link className="abel-regular text-center text-2xl mb-10 text-pink-300 hover:underline" href={`/contactInfo`}>{k('contactLink')}</Link>
       </div>
       {/* Timeline start. Different sizing on smaller screen */}
-      <div className="min-h-full grid overflow-auto w-2/4 ml-28 lg:ml-72">
+      <div className="overflow-auto w-2/4 ml-24 lg:ml-72">
         {/* Loops through the events written in the json file */}
         {keys.map((key, index) => (
           <div key={key}>
@@ -53,9 +53,10 @@ export default function Timeline() {
                 )}
                 {/* text content of the card */}
                 <div className='text-center -mt-8'>
-                  <p className='abel-regular -mt-12 mb-6 md:ml-0 ml-3'>{t(`${key}.date`)}</p>
-                  <p className='abel-regular'>{t(`${key}.title`)}</p>
-                  <p className='abel-regular'>{t(`${key}.description`)}</p>
+                  <p className='abel-regular p-2 -mt-12 mb-6 md:ml-0 ml-4'>{t(`${key}.date`)}</p>
+                  <p className='abel-regular text-xl mb-2 text-pink-100 mix-blend-hard-light'>{t(`${key}.title`)}</p>
+                  <Separator className=" bg-white  mx-auto " orientation="horizontal" />
+                  <p className='abel-regular mt-3'>{t(`${key}.description`)}</p>
                 </div>
               </CardContent>
             </Card>

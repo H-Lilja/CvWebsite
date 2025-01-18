@@ -3,6 +3,7 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/src/i18n/routing';
 import { Header } from '@/components/header';
+import Footer from '@/components/footer';
 
 export default async function LocaleLayout({
   children,
@@ -11,7 +12,7 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  const { locale } = params;
+  const { locale } = await params;
 
   // Ensure that the incoming locale is valid
   if (!routing.locales.includes(locale as any)) {
@@ -23,16 +24,20 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider messages={messages}>
-      <div className="flex flex-col h-screen">
+      <div>
         <div className="top-0 z-10">
           <Header />
         </div>
 
         {/* Scrollable content area */}
-        <div className="flex top-0 overflow-y-auto">
+        <div className="overflow-y-auto">
           {children}
         </div>
+        <footer >
+        <Footer></Footer>
+        </footer>
       </div>
+
     </NextIntlClientProvider>
     
   );

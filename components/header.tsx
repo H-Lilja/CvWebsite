@@ -13,7 +13,7 @@ export const Header: React.FC = () => {
   const t = useTranslations('HomePage');
 
   return (
-    <header className="flex top-0 justify-between items-center">
+    <header className="flex  top-0 justify-between items-center">
       {/* leftmost cursive heidi lilja text */}
       <h1 className='meow-script-regular md:flex md:items-center'>Heidi Lilja</h1> 
       {/* on smaller screeen the links are in dropdownmenu so the language picker must be dealt with outside of it */}
