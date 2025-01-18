@@ -1,7 +1,7 @@
 import '../src/app/[locale]/globals.css'
 import React, { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
-
+import Image from 'next/image';
 
 function About() {
   // get the json selection for homePAge
@@ -31,10 +31,13 @@ function About() {
      </div>
 
      {/* Image of self in page */}
-      <img
+      <Image
         className= "w-56 h-56 lg:w-80 lg:h-80 object-cover rounded-full ml-5 lg:ml-0 lg:mr-60 -mt-80 lg:-mt-20 lg:place-self-end place-self-start"
         src={imageUrl} 
-        alt="Heidi"/>
+        alt="Heidi"
+        width={400} // Set width as per requirement
+        height={400} // Set height as per requirement
+        />
         {/* Icons and links for socials */}
       <div className='flex gap-3 place-self-start lg:place-self-end mb-20 lg:mb-24 mr-0 lg:mr-32 ml-6 lg:ml-0 mt-16 lg:mt-5'>
         <a href="https://www.instagram.com/heidiliilja/" target="_blank">
