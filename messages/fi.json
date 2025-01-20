@@ -32,7 +32,7 @@
       "event2": {
         "date": "11/2024",
         "title": "VR-Robotti",
-        "description": "Pieni vr robotti, joka hakee aikataulun haluttujen kaupunkien reiteistä ja kirjoittaa sen seuraavaksi 8 tunniksija luo siitä Excel-tiedoston. Luotu UiPath Studio -ohjelmalla",
+        "description": "Pieni robotti,joka hakee vr:n sivuilta aikataulut seuraavaksi 8 tunniksi haluttujen kaupunkien väliltä ja luo näistä excel taulukon. Luotu UiPath Studio -ohjelmalla",
         "url": "https://github.com/H-Lilja/Vr-Timetable-Robot",
         "url2": "-"
       },

@@ -31,7 +31,7 @@
       "event2": {
         "date": "11/2024",
         "title": "VR-Robot",
-        "description": "A small vr robot, that gets the timetable from wanted input cities and writes it for next 8 hours. Creates excel file. Created with UiPath studio",
+        "description": "A small robot, that gets the timetable from vr-website of wanted input cities and writes it for next 8 hours. Creates excel file. Created with UiPath studio",
         "url": "https://github.com/H-Lilja/Vr-Timetable-Robot",
         "url2": "-"
       },
@@ -46,7 +46,7 @@
   
   "Contact": {
     "title":"Click icon of the preferred way of contact",
-    "tel": "Please email me or contact in Linkedin for my phonenumber."
+    "tel": "Please email me or contact in Linkedin for my phone number."
   },
   "Timeline": {
     "event1": {
