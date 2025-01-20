@@ -16,7 +16,7 @@ import { Button } from "@/components/ui/button"
 return (
 <div className='mb-2 '>
   <div className='grid gap-2'>
-  <h1 className='abel-regular text-4xl text-center ml-0 md:-ml-24 mb-4 lg:text-6xl'>{k("mainTitle")}</h1>
+  <h1 className='abel-regular text-4xl text-center ml-0 md:-ml-24 mb-4 3xl:text-6xl'>{k("mainTitle")}</h1>
     </div>
       <div className="grid gap-5  grid-cols-1 lg:grid-cols-3 mx-3 auto-rows-max" >
         {keys.map((key) => (
@@ -36,7 +36,7 @@ return (
                   width={800} // Set width as per requirement
                   height={800} // Set height as per requirement
                         />
-                <div className='text-center p-1 md:text-xl lg:text-3xl'>
+                <div className='text-center p-1 md:text-xl 3xl:text-3xl'>
                   <p className='abel-regular'>{t(`${key}.date`)}</p>
                   <p className='abel-regular'>{t(`${key}.title`)}</p>
                   <p className='abel-regular'>{t(`${key}.description`)}</p>
@@ -44,7 +44,7 @@ return (
                   {t(`${key}.url`) && t(`${key}.url`) !== "-" && (
                     <Button className='button m-2 lg:mt-4' variant={'outline'} asChild>
                     <Link 
-                      className="abel-regular text-start hover:underline lg:text-xl" 
+                      className="abel-regular text-start hover:underline 3xl:text-xl" 
                       href={t(`${key}.url`)}
                     > {k('visitCode')}</Link></Button>)}
                    {/* Conditionally render the Link if the description URL is valid */}
