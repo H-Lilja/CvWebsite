@@ -31,7 +31,7 @@ function About() {
 
      {/* Image of self in page */}
       <Image
-        className= "w-56 h-56 md:w-80 md:h-80  3xl:w-96 3xl:h-96 object-cover rounded-full ml-5 md:ml-0 3xl:ml-96 3xl:mt-10 3xl:-mr-40 md:mr-60 -mt-80 md:-mt-20 md:place-self-end place-self-start 3xl:place-self-center"
+        className= "w-56 h-56 md:w-80 md:h-80  3xl:w-[36rem] 3xl:h-[36rem] object-cover rounded-full ml-5 md:ml-0  3xl:mt-10 3xl:-mr-60 md:mr-60 -mt-80 md:-mt-20 md:place-self-end place-self-start 3xl:place-self-center"
         src={imageUrl} 
         alt="Heidi"
         width={400} // Set width as per requirement
