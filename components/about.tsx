@@ -2,6 +2,7 @@ import '../src/app/[locale]/globals.css'
 import React, { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import TypingText from './animata/text/typing-text';
 
 function About() {
   // get the json selection for homePAge
@@ -23,20 +24,22 @@ function About() {
       {/* first title in page */}
      <h1 className='source-serif-4 place-self-start ml-4 mt-2 3xl:mt-4 3xl:text-4xl'>{t("greeting")}</h1>
      {/* name title */}
+     {/* <SplitText text="Heidi Lilja" /> */}
      <h1 className='limelight-big place-self-start ml-3 mt-1 lg:mt-0 3xl:text-9xl 3xl:mt-4'>Heidi Lilja</h1>
-     {/* jobtitle after name and svg for the > mark */}
+     {/* jobtitle after name*/}
      <div className='flex gap-1 place-self-start ml-4 mt-72 lg:mt-0 mr-10 lg:mr-0 3xl:mt-4'>
-     <h2 className='source-serif-4 place-self-start -mt-1 mr-12 lg:mr-0  3xl:text-4xl'>{t("myTitle")}</h2>
+     <h2 className='source-serif-4 place-self-start -mt-1 mr-12 lg:mr-0  3xl:text-4xl'><TypingText text={t("myTitle")}></TypingText></h2>
      </div>
 
      {/* Image of self in page */}
       <Image
-        className= "w-56 h-56 md:w-80 md:h-80  3xl:w-[36rem] 3xl:h-[36rem] object-cover rounded-full ml-5 md:ml-0  3xl:mt-10 3xl:-mr-60 md:mr-60 -mt-80 md:-mt-20 md:place-self-end place-self-start 3xl:place-self-center"
+        className= "w-56 h-56 md:w-80 md:h-80  3xl:w-[36rem] 3xl:h-[36rem] object-cover rounded-full ml-5 md:ml-0 3xl:mt-10 3xl:-mr-60 md:mr-44 -mt-80 lg:-mt-20 lg:place-self-end place-self-start 3xl:place-self-center"
         src={imageUrl} 
         alt="Heidi"
         width={400} // Set width as per requirement
         height={400} // Set height as per requirement
         />
+
         {/* Icons and links for socials */}
       <div className='flex gap-3 place-self-start md:place-self-end 3xl:place-self-end mb-20 md:mb-24 3xl:mb-60 mr-0 md:mr-14 3xl:mr-60 ml-6 3xl:ml-0  mt-16 md:-mt-5 3xl:mt-20'>
         <a href="https://www.instagram.com/heidiliilja/" target="_blank">
@@ -50,7 +53,7 @@ function About() {
       </div>
 
 
-      <div className='mb-28 lg:mb-20 w-auto bg-zinc-800'>
+      <div className='mb-28 lg:mb-20 w-auto bg-zinc-800 image'>
         {/* Titles for about and skills */}
         <div className="lg:flex grid mt-4">
           <h1 className='abel-regular text-4xl 3xl:text-6xl  mx-9'>{t("title")}</h1>

@@ -191,4 +191,30 @@ main {
   border-radius: 10px; */
 
 }
+@keyframes pastel-shadow {
+  0% {
+    box-shadow: 0 0 10px 0 #ffadad, 0 0 20px 0 #ffd6a5, 0 0 30px 0 #fdffb6;
+  }
+  25% {
+    box-shadow: 0 0 10px 0 #caffbf, 0 0 20px 0 #9bf6ff, 0 0 30px 0 #a0c4ff;
+  }
+  50% {
+    box-shadow: 0 0 10px 0 #bdb2ff, 0 0 20px 0 #ffc6ff, 0 0 30px 0 #ffadad;
+  }
+  75% {
+    box-shadow: 0 0 10px 0 #ffd6a5, 0 0 20px 0 #fdffb6, 0 0 30px 0 #caffbf;
+  }
+  100% {
+    box-shadow: 0 0 10px 0 #9bf6ff, 0 0 20px 0 #a0c4ff, 0 0 30px 0 #bdb2ff;
+  }
+}
 
+.image {
+  animation: pastel-shadow 25s infinite alternate ease-in-out;
+
+}
+
+
+/* {
+  box-shadow: 0 0 15px rgba(255, 177, 254, 0.886); 
+} */
