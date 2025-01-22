@@ -37,7 +37,7 @@ return (
                   height={800} // Set height as per requirement
                         />
                 <div className='text-center p-1 md:text-xl 3xl:text-3xl'>
-                  <p className='abel-regular'>{t(`${key}.date`)}</p>
+                  <p className='abel-regular 3xl:text-xl'>{t(`${key}.date`)}</p>
                   <p className='abel-regular'>{t(`${key}.title`)}</p>
                   <p className='abel-regular'>{t(`${key}.description`)}</p>
                   {/* Conditionally render the Link if the description URL is valid */}

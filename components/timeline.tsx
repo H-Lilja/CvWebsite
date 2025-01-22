@@ -21,7 +21,7 @@ export default function Timeline() {
         <Link className="abel-regular text-center text-2xl 3xl:text-4xl mb-10 text-pink-300 hover:underline" href={`/contactInfo`}>{k('contactLink')}</Link>
       </div>
       {/* Timeline start. Different sizing on smaller screen */}
-      <div className="overflow-auto w-2/4 ml-24 md:ml-72  3xl:mx-auto">
+      <div className="overflow-auto w-2/4 ml-24 md:ml-72 3xl:mx-auto">
         {/* Loops through the events written in the json file */}
         {keys.map((key, index) => (
           <div key={key}>
@@ -29,7 +29,7 @@ export default function Timeline() {
               <CardContent>
                 {/* Conditionally render the SVG based on `t(`${key}.icon`)` */}
                 {t(`${key}.icon`) === "work" ? (
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#ff80c0" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-briefcase-business  w-12 h-12 3xl:w-24 3xl:h-24">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#ff80c0" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-briefcase-business   w-12 h-12 3xl:w-24 3xl:h-24">
                     <path d="M12 12h.01" />
                     <path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
                     <path d="M22 13a18.15 18.15 0 0 1-20 0" />
@@ -47,9 +47,9 @@ export default function Timeline() {
                 )}
                 {/* text content of the card */}
                 <div className='text-center -mt-8'>
-                  <p className='abel-regular p-2 -mt-12  lg:-mt-20 mb-6 md:ml-0 ml-4 lg:text-2xl'>{t(`${key}.date`)}</p>
+                  <p className='abel-regular p-2 -mt-12 lg:-mt-20 mb-6 md:ml-0 ml-4 lg:text-2xl'>{t(`${key}.date`)}</p>
                   <p className='abel-regular text-xl mb-2 text-pink-100 mix-blend-hard-light lg:text-4xl'>{t(`${key}.title`)}</p>
-                  <Separator className=" bg-white  mx-auto " orientation="horizontal" />
+                  <Separator className=" bg-white mx-auto " orientation="horizontal" />
                   <p className='abel-regular mt-3 lg:text-xl'>{t(`${key}.description`)}</p>
                 </div>
               </CardContent>
@@ -57,7 +57,7 @@ export default function Timeline() {
 
             {/* Conditionally render Separator only if it's not the last item */}
             {index < keys.length - 1 && (
-              <Separator className=" bg-white h-32 mx-auto " orientation="vertical" />
+              <Separator className=" bg-white shadow-lg h-32 mx-auto " orientation="vertical" />
             )}
           </div>
         ))}
