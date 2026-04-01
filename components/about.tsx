@@ -10,7 +10,7 @@ function About() {
       const [imageUrl, setImageUrl] = useState('');
       const skillTitle = t('skillTitle');
       // the margin right property needs to be different in different languages
-      const pClass = skillTitle === 'Taidot' ? "abel-regular mr-20 text-nowrap mb-28 lg:mb-0 ml-9 lg: mb-5 ml-0 md:text-xl 3xl:text-2xl" : "abel-regular mr-20 text-nowrap mb-28 lg:mb-5 ml-9 lg:ml-0 3xl:text-2xl"; // Example styles
+      const pClass = skillTitle === 'Taidot' ? "abel-regular mr-20 text-nowrap mb-28 lg:mb-20 ml-9 lg:ml-0 md:text-xl 3xl:text-2xl" : "abel-regular mr-20 text-nowrap mb-28 lg:mb-20 ml-9 lg:ml-0 3xl:text-2xl"; // Example styles
       // Set the image URL with a unique query parameter on component mount
       useEffect(() => {
         const randomParam = new Date().getTime(); // Unique timestamp
