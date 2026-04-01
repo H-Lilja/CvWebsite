@@ -69,7 +69,7 @@ function About() {
         </div>
 
         {/* Div to contain the styled skills */}
-        <div className='relative'>
+        <div className='relative mb-6'>
         <div className='absolute top-4 left-9 lg:right-0 -mt-24 md:-mt-28 mb-20 lg:place-self-end 3xl:text-xl'>
               {/* Divs to style skills */}
               <div className='flex mr-16'>
