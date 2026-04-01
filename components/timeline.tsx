@@ -10,7 +10,7 @@ export default function Timeline() {
   // for titles
   const k = useTranslations('HomePage');
   //keys for the events
-  const keys = ["event1", "event2", "event3", "event4"];
+  const keys = ["event0","event1", "event2", "event3", "event4"];
 
   return (
     <div className='mb-2'>

@@ -5,9 +5,9 @@
     "greeting":"Hi! Welcome to my portfolio. I am",
     "toRecommendations":"Recommendations",
     "toProjects": "Projects",
-    "myTitle":"Full-Stack Developer | RPA & Automation Specialist",
+    "myTitle":"RPA & Automation Specialist | Fullstack developer",
     "title": "About me",
-    "about": "I am a developer new to frontend, but I have two years of experience as an RPA developer. I am passionate about new technologies and actively seeking new opportunities where I can apply my skills and continue learning. I am open to new challenges and excited to see what the future holds. Feel free to reach out if you'd like to discuss further or if I can assist you in any way!",
+    "about": "I am a Senior Automation specialist and a hobby full stack developer. I am passionate about emerging technologies and am strongly commited to learning and developing my skills. Feel free to reach out if you'd like to discuss further or if I can assist you in any way!",
     "skills": "I am proficient with the following technologies:",
     "skillTitle": "Skills",
     "timelineText": "Shortened timeline of my education and latest jobs.",
@@ -49,6 +49,12 @@
     "tel": "Please email me or contact in Linkedin for my phone number."
   },
   "Timeline": {
+      "event0": {
+      "date": "2025-Present",
+      "title": "Senior Automation Developer",
+      "description": "Working as Automation Developer & Consultant on Automation projects",
+      "icon": "work"
+        },
     "event1": {
       "date": "2022-2025",
       "title": "RPA-Developer",
