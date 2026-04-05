@@ -16,9 +16,9 @@ export default function Timeline() {
     <div className='mb-2'>
       <div className='grid'>
         {/* Main headline about timeline */}
-        <h1 className='abel-regular text-4xl 3xl:text-6xl text-center mb-4 p-2'>{k("timelineText")}</h1>
+        <h1 className='abel-regular mr-8 text-4xl 3xl:text-6xl text-center mb-4 p-2'>{k("timelineText")}</h1>
         {/* Link to projects */}
-        <Link className="abel-regular text-center text-2xl 3xl:text-4xl mb-10 text-pink-300 hover:underline" href={`/contactInfo`}>{k('contactLink')}</Link>
+        <Link className="abel-regular mr-8 text-center text-2xl 3xl:text-4xl mb-10 text-pink-300 hover:underline" href={`/contactInfo`}>{k('contactLink')}</Link>
       </div>
       {/* Timeline start. Different sizing on smaller screen */}
       <div className="overflow-auto w-2/4 ml-24 md:ml-72 3xl:mx-auto">

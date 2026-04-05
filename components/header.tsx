@@ -41,7 +41,7 @@ export const Header: React.FC = () => {
       </div>
 
       {/* dropdown menu showing only on small screen */}
-      <div className='md:hidden flex mt-2 mr-3'>
+      <div className='md:hidden flex mt-2 mr-8'>
           <DropdownMenu>
           <DropdownMenuTrigger>
                <div className="relative flex overflow-hidden items-center justify-center rounded-full w-[40px] h-[40px] transform transition-all  ring-0 bg-black ">
